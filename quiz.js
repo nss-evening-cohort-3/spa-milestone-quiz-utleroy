@@ -6,10 +6,10 @@ function populatePage (inventory) {
 	for(let i = 0; i < inventory.length; i++) {
 		let singleCar = inventory[i];
 		
-	function buildCar (singleCar) {
-		unit.innerHTML += `<singleCar class="unit"><header>${unit.make}</header>`
 	}
-	console.log(buildCar);
+	function buildCar (singleCar) {
+		unit.innerHTML += `<div class="unit"><header>${unit.make}</header>`
+	// console.log(buildCar);  
 	};
 
   // Loop over the inventory and populate the page
