@@ -2,9 +2,10 @@
 
 let unit = document.getElementById("cars");
 
-function populatePage (inventory) {
+function populatePage (inventory) { // this is the inventory from the callback on the carlot.js
 	for(let i = 0; i < inventory.length; i++) {
 		let singleCar = inventory[i];
+		console.log(inventory[i]);
 		
 	}
 	function buildCar (singleCar) {
@@ -13,6 +14,8 @@ function populatePage (inventory) {
 	};
 
 }
+
+CarLot.loadInventory(populatePage)
 
   // Loop over the inventory and populate the page
 
