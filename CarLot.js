@@ -1,22 +1,32 @@
-"use strict";
+"use-strict";
 
-var CarLot = (function () {
-  let inventory = [];
+    let CarLot = (function () {
+     let cars = [];
 
   return {
-    getInventory: function () {
-    },
-    loadInventory: function (populatePage) {
-      
+    loadInventory: function () {
       let inventoryLoader = new XMLHttpRequest();
-      inventoryLoader.open("GET", "inventory.json");
-      inventoryLoader.send();
-      inventoryLoader.addEventListener("load", function () {
-      inventory = JSON.parse(this.responseText).cars;
-      populatePage(inventory)
+        inventoryLoader.addEventListener("load", function () {
+        inventory = JSON.parse(this.responseText).inventory;
+        console.log(CarLot);
+
+        let car1 = document.getElementById("cars");
+        let outputString = "";
+
+        for (let i = 0; i < car1.length; i++) {
+          let currentCar = car1[i]
+        }
+
+        car1.innerHTML = outputString;
 
       });
+
+      inventoryLoader.open("GET", "inventory.json");
+      inventoryLoader.send();  
     }
   };
 
 })();
+
+CarLot.loadInventory();
+
