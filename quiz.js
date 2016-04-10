@@ -5,7 +5,9 @@ function populatePage (inventory) { // this is the inventory from the callback o
      let output = "";
 	for(var i = 0; i < inventory.length; i++) {
 		let currentCar = inventory[i];
-      output += `<div id="container"><h1>${currentCar.make}</h1><p>${currentCar.model}</p><p>${currentCar.year}</p><p>${currentCar.price}</p><p>${currentCar.color}</p><p>${currentCar.purchased}</p><p>${currentCar.description}</p></div>`;
+      output += `<div class="col-xs-3"><h1>${currentCar.make} ${currentCar.model}</h1><p>${currentCar.model}</p><p>${currentCar.year}</p><p>${currentCar.price}</p><p>${currentCar.color}</p><p>${currentCar.purchased}</p><p>${currentCar.description}</p></div>`;
+
+      //-->use bootstrap grid system to layout columns<--//
 	displayCar.innerHTML = output;
 		
 	}
