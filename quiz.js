@@ -5,13 +5,7 @@ function populatePage (inventory) { // this is the inventory from the callback o
      let output = "";
 	for(var i = 0; i < inventory.length; i++) {
 		let currentCar = inventory[i];
-      output += `<h1>${currentCar.make}</h1>`;
-      output += `<p>${currentCar.model}</p>`;
-      output += `<p>${currentCar.year}</p>`;
-      output += `<p>${currentCar.price}</p>`;
-      output += `<p>${currentCar.color}</p>`;
-      output += `<p>${currentCar.purchased}</p>`;
-      output += `<p>${currentCar.description}</p>`;
+      output += `<div id="container"><h1>${currentCar.make}</h1><p>${currentCar.model}</p><p>${currentCar.year}</p><p>${currentCar.price}</p><p>${currentCar.color}</p><p>${currentCar.purchased}</p><p>${currentCar.description}</p></div>`;
 	displayCar.innerHTML = output;
 		
 	}
