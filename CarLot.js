@@ -14,9 +14,9 @@
 
 
       });
-
       inventoryLoader.open("GET", "inventory.json");
       inventoryLoader.send();  
+
     }
   };
 

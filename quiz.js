@@ -1,21 +1,25 @@
 "use strict";
 
-let unit = document.getElementById("cars");
-
 function populatePage (inventory) { // this is the inventory from the callback on the carlot.js
-	for(let i = 0; i < inventory.length; i++) {
-		let singleCar = inventory[i];
-		console.log(inventory[i]);
+     let displayCar = document.getElementById("cars");
+     let output = "";
+	for(var i = 0; i < inventory.length; i++) {
+		let currentCar = inventory[i];
+      output += `<h1>${currentCar.make}</h1>`;
+      output += `<p>${currentCar.model}</p>`;
+      output += `<p>${currentCar.year}</p>`;
+      output += `<p>${currentCar.price}</p>`;
+      output += `<p>${currentCar.color}</p>`;
+      output += `<p>${currentCar.purchased}</p>`;
+      output += `<p>${currentCar.description}</p>`;
+	displayCar.innerHTML = output;
 		
 	}
-	function buildCar (singleCar) {
-		unit.innerHTML += `<div class="unit"><header>${unit.make}</header>`
-	// console.log(buildCar);  
-	};
 
-}
 
-CarLot.loadInventory(populatePage)
+};
+
+CarLot.loadInventory(populatePage);
 
   // Loop over the inventory and populate the page
 
@@ -24,5 +28,3 @@ CarLot.loadInventory(populatePage)
 
 // Load the inventory and send a callback function to be
 // invoked after the process is complete
-// newCarlot.loadInventory(populatePage);
-	// console.log(inventory[i].);
