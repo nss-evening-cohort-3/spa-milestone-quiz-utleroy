@@ -2,17 +2,9 @@ body {
 	background-color: lightgrey;
 }
 
-#car-container {
-	margin: 25px;
-	padding: 
-}
-
-#container {
-	display: inline-block;
-	max-width: 250px;
-	min-width: 250px;
-	margin: 5px;
-	padding-right: 5px;
+.col-xs-3 {
+	margin: 10px 10px 0 0;
 	border: 1px solid black;
-	border-radius: 3px;
+	border-radius: 5px;
+	background-color: white;
 }
