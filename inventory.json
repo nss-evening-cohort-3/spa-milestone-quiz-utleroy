@@ -5,7 +5,7 @@
       "model": "Rogue",
       "year": "2006",
       "price": "$8999.99",
-      "color": "FireBrick",
+      "color": "red",
       "purchased": false,
       "description": "This is an immaculate 2006 Nissan Rogue with only 25,000 miles on it. Leather seats, power everything."
     },
