@@ -14,7 +14,7 @@
       "model": "Sequoia",
       "year": "2005",
       "price": "$7900.95",
-      "color": "DarkSlateGray",
+      "color": "blue",
       "purchased": false,
       "description": "This is an immaculate 2005 Toytota Sequoia with only 225,000 miles on it. Leather seats, power everything."
     },
@@ -23,7 +23,7 @@
       "model": "Liberty",
       "year": "2007",
       "price": "$6000.00",
-      "color": "Thistle",
+      "color": "black",
       "purchased": false,
       "description": "This is an immaculate 2007 Jeep Liberty with only 89,000 miles on it. Leather seats, power everything."
     }
