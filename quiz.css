@@ -21,5 +21,5 @@ body {
 
 .clicked-border{
     background-color: black;
-    border: 8px solid; 
+    border: 8px solid black; 
 }
