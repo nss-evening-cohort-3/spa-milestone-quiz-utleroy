@@ -1,0 +1,31 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "$8999.99",
+      "color": "red",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25,000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Toyota",
+      "model": "Sequoia",
+      "year": "2005",
+      "price": "$7900.95",
+      "color": "blue",
+      "purchased": false,
+      "description": "This is an immaculate 2005 Toytota Sequoia with only 225,000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Jeep",
+      "model": "Liberty",
+      "year": "2007",
+      "price": "$6000.00",
+      "color": "black",
+      "purchased": false,
+      "description": "This is an immaculate 2007 Jeep Liberty with only 89,000 miles on it. Leather seats, power everything."
+    }
+  ]
+}
