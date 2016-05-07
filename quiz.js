@@ -1,7 +1,7 @@
 "use strict";
 
 //augmenting iife
-var CarLot = (function(originalCarLot) {
+var arLot = (function(originalCarLot) {
 
 // this is the inventory from the callback on the carlot.js
   originalCarLot.populatePage = function(inventory) { 
